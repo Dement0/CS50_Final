@@ -1,3 +1,66 @@
+/* Use 'Oleo Script' from Google fonts */
 body {
 font-family: 'Oleo Script', cursive;
+}
+
+/* Allow map to fill viewport */
+html, body, #map-canvas, .container-fluid
+{
+    /* Height of these elements */
+    height: 100%;
+
+    /* No margin around these elements */
+    margin: 0;
+
+    /* Disable scrollbars */
+    overflow: hidden;
+
+    /* No padding within these elements */
+    padding: 0;
+}
+
+/* Center form */
+#adressForm
+{
+    /* Position form "absolutely" where we want it */
+    position: absolute;
+
+    /* Distance from top edge of viewport */
+    top: 30px;
+
+    /* Form's width */
+    width: 100%;
+}
+
+#adressForm .form-group
+{
+    /* Block-level flex container */
+    display: flex;
+
+    /* Center container's content */
+    justify-content: center;
+}
+
+/* Stylize text box */
+#q
+{
+    /* Override typeahead.js's transparent background */
+    background-color: #ffffff !important;
+
+    /* Text box's width */
+    width: 300px;
+}
+
+/* Stylize info window */
+#info
+{
+    /* No margin around this element */
+    margin: 0;
+
+    /* Allow scrollbars as needed */
+    overflow: auto;
+}
+#info ul
+{
+    margin-bottom: 0;
 }

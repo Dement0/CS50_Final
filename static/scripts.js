@@ -67,6 +67,8 @@ $(document).ready(function() {
 
   // Options for map
   // https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+  let center = {lat: 38.1157, lng: 13.3613}; // Palermo, Italy
+
   let options = {
     center: {lat: 38.1157, lng: 13.3613}, // Palermo, Italy
     disableDefaultUI: true,
@@ -83,5 +85,5 @@ $(document).ready(function() {
   // Instantiate map
   map = new google.maps.Map(canvas, options);
 
-  google.maps.event.addListenerOnce(map, "idle", configure);
+  // google.maps.event.addListenerOnce(map, "idle", configure);
 });
